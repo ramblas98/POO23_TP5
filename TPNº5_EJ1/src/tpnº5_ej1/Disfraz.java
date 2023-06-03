@@ -5,7 +5,7 @@
 package tpnº5_ej1;
 
 
-public class Disfraz {
+public class Disfraz implements Rentable{
     private String personaje;
     private char taller;
     private int dias;
@@ -29,4 +29,10 @@ public class Disfraz {
     public void setTaller(char taller){this.taller = taller;}
     public void setDias(int dias){this.dias = dias;}
     public void setPrecio(double precio){this.precio = precio;}
+    
+    @Override
+    public void alquilar(int periodo){
+        System.out.println("Disfraz alquilado por " + periodo + " dias");
+    }
+        
 }
