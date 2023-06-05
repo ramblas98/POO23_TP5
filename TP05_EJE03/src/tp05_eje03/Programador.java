@@ -9,40 +9,43 @@ package tp05_eje03;
  *
  * @author Sans
  */
-public class Gato extends Animal{
+public class Programador extends Persona{
 
-    public Gato() {
+    public Programador() {
     }
 
-    public Gato(String nombre, String direccion) {
-        super(nombre, direccion);
+    public Programador(String apellido, int dni) {
+        super(apellido, dni);
     }
-    
-    
-    
-    
+
+    public Programador(String apellido, int dni, String nombre, String direccion) {
+        super(apellido, dni, nombre, direccion);
+    }
+    //metodo
     @Override
     public void hablar(){
-        System.out.println("Miau");
+        super.hablar();
+        System.out.print(" y soy programador");
+        System.out.println();
     }
+    
     @Override
     public boolean esMayor(Object o){
-        Gato a=(Gato) o;
+        Programador a=(Programador) o;
         if(this.getNombre().compareTo(a.getNombre())>0)return true;
         else return false;
     }
     @Override
     public boolean esMenor(Object o){
-        Gato a=(Gato) o;
+        Programador a=(Programador) o;
         if(this.getNombre().compareTo(a.getNombre())<0)return true;
         else return false;
     }
     @Override
     public boolean esIguaL(Object o){
-        Gato a=(Gato) o;
+        Programador a=(Programador) o;
         if(this.getNombre().compareTo(a.getNombre())==0)return true;
         else return false;
     }
-    
     
 }
