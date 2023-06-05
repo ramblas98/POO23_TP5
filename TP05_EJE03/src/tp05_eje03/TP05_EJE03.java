@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package tp05_eje03;
-
+import java.util.Arrays;
 /**
  *
  * @author Sans
@@ -31,6 +31,11 @@ public class TP05_EJE03 {
      l[0]=a;
      l[1]=b;
      l[2]=c;
+     for(int i=0;i<3;i++){
+         l[i].hablar();
+     }
+     System.out.println("Lista ordenada por nombre");
+     Arrays.sort(l,new CompararRelacionesNombre());
      for(int i=0;i<3;i++){
          l[i].hablar();
      }

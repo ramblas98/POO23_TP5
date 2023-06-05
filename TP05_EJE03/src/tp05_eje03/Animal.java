@@ -36,4 +36,8 @@ public class Animal extends Identificador implements Hablador,Relaciones{
     public boolean esIguaL(Object o){
         return true;
     }
+    @Override
+    public String darnombre(){
+        return super.getNombre();
+    }
 }

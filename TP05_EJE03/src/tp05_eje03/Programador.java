@@ -31,20 +31,20 @@ public class Programador extends Persona{
     
     @Override
     public boolean esMayor(Object o){
-        Programador a=(Programador) o;
-        if(this.getNombre().compareTo(a.getNombre())>0)return true;
+        Hablador a=(Hablador) o;
+        if(this.darnombre().compareTo(a.darnombre())>0)return true;
         else return false;
     }
     @Override
     public boolean esMenor(Object o){
-        Programador a=(Programador) o;
-        if(this.getNombre().compareTo(a.getNombre())<0)return true;
+        Hablador a=(Hablador) o;
+        if(this.darnombre().compareTo(a.darnombre())<0)return true;
         else return false;
     }
     @Override
     public boolean esIguaL(Object o){
-        Programador a=(Programador) o;
-        if(this.getNombre().compareTo(a.getNombre())==0)return true;
+        Hablador a=(Hablador) o;
+        if(this.darnombre().compareTo(a.darnombre())==0)return true;
         else return false;
     }
     

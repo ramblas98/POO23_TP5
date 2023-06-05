@@ -11,4 +11,5 @@ package tp05_eje03;
  */
 public interface Hablador {
     public void hablar();
+    public String darnombre();
 }
