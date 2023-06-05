@@ -8,4 +8,5 @@ package tpnº5_ej4;
 public interface Hablador {
     
     public void saluda();
+    public String darNombre();
 }
